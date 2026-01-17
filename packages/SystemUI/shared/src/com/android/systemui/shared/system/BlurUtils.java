@@ -29,7 +29,6 @@ public abstract class BlurUtils {
      * @return {@code true} when supported.
      */
     public static boolean supportsBlursOnWindows() {
-        return CROSS_WINDOW_BLUR_SUPPORTED && ActivityManager.isHighEndGfx()
-                && !SystemProperties.getBoolean("persist.sysui.disableBlur", false);
+        return CROSS_WINDOW_BLUR_SUPPORTED;
     }
 }
